@@ -11,10 +11,12 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <h2>header</h2>
+        {/* <h2>タイトル１です！</h2>
         <p>共通の項目が表示されるらしい</p>
-        <p>むずいよ～～～～～</p>
-        <button>助けて</button>
+        <h2>タイトル２です！</h2>
+        <p>共通の項目が表示されるらしい</p>
+        <h2>タイトルです！</h2>
+        <p>共通の項目が表示されるらしい</p> */}
 
         {children}
       </body>
