@@ -1,27 +1,17 @@
-import Link from "next/link";
+import React from "react";
+import Header from "./components/Header";
+import Main from "./components/Main";
+// import Footer from "./components/Footer";
+// import Image from "next/image";
 
-export default function page() {
+const App = () => {
   return (
-    <>
-      <head>
-        <title>山田太郎のポートフォリオサイト</title>
-      </head>
-      <Link href="/page2">page2へ</Link>
-      <header>
-        <img src="" alt="" />
-
-      </header>
-      {/* -------------------------------------------------- */}
-      <main>
-        <div class="work-1">
-          <h1>WORKS</h1>
-          <img src="work-1.png" alt="" width="480" height="280" />
-
-        {/* -------------------------------------------------- */}
-
-        {/* -------------------------------------------------- */}
-
-      </main>
-    </>
+    <div>
+      <Header />
+      <Main />
+      {/* <Footer /> */}
+    </div>
   );
-}
+};
+
+export default App;
