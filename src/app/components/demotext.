@@ -1,0 +1,51 @@
+components→workcomponentsの中身
+
+import styled from "style-components";
+
+export default function WorkComponent(imgPath) {
+  return (
+    <workContainer>
+      <img src="/public/home/{imgPath}" alt="" />
+      <textContainer>
+        <h1>{title}</h1>
+        <p>aaaa</p>
+      </textContainer>
+    </workContainer>
+  );
+}
+
+
+home　index.tsxの内容
+const workContainer = styled.div`
+  color: red;
+`;
+const textContainer = styled.div`
+  border: 2px...;
+
+
+import WorkComponent from "@/components/workComponent";
+
+export default function Home() {
+  return (
+    <>
+      <header>
+        <img src="/public/header/profile.png" alt="" />
+        <h1>佐藤文胤</h1>
+        <h2>webデザイナー見習い</h2>
+        <p>"dodinsatall"で学んだ事を活かして模写コーディング</p>
+      </header>
+      <main>
+        {/* {TestComponent("work-1.png")}
+        {TestComponent("work-2.png")}
+        {TestComponent("work-3.png")}
+        {TestComponent("yupi")}
+        {TestComponent("aho")} */}
+
+        {/* {WorkComponent()}
+        {WorkComponent()}
+        {WorkComponent()}
+        {WorkComponent()} */}
+      </main>
+    </>
+  );
+}
