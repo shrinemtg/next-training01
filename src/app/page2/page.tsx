@@ -12,12 +12,12 @@ export default function Portfolio() {
         <Link href="/">to Home</Link>
       </Title>
       <PortfolioContainer>
-        <VideoContainer controls>
+        {/* <VideoContainer controls>
           <source
             src="/Images/portfolio/2023-05-05-青山-結婚式.mp4"
             type="video/mp4"
           />
-        </VideoContainer>
+        </VideoContainer> */}
         <Image
           src="/Images/portfolio/giraffe2.jpg"
           alt=""
