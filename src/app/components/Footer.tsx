@@ -1,8 +1,7 @@
-// Footer.tsx
+"use client";
 import React from "react";
+// import styled from "styled-components";
 
-const Footer = () => {
-  return <footer>This is the footer component.</footer>;
-};
-
-export default Footer;
+export default function Footer() {
+  return <p>@2020 Profile</p>;
+}
