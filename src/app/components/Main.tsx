@@ -16,8 +16,8 @@ export default function Main() {
           />
         </ImageContainer>
         <div>
-          <h2>フルスタックエンジニアを目指して日々精進しています。</h2>
-          <p>webデザイン・ロゴデザイン・コーディングできます。</p>
+          <h2>フルスタックエンジニアを目指して日々精進！</h2>
+          <p>webデザイン・ロゴデザイン・コーディングできます</p>
 
           <h2>人に寄り添い共に叶える</h2>
           <p>
@@ -107,12 +107,20 @@ export default function Main() {
   );
 }
 
-const ListContainer = styled.div``;
-
 const MainContainer = styled.div`
   text-align: center;
   /* background-color: #2b2b2b;
   color: white; */
+
+  h1 {
+    text-decoration: underline;
+    text-decoration-color: #25abcc;
+    /* display: inline-block;
+    margin-bottom: -1px; */
+  }
+  p {
+    font-size: 18px;
+  }
 
   ul {
     list-style-type: none;
@@ -122,9 +130,10 @@ const MainContainer = styled.div`
 const ImageContainer = styled.div`
   > img {
     border-radius: 1%;
-    margin: 10 20;
+    margin: 10px auto;
     max-width: 100%;
+    margin-top: 32px;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   }
 `;
