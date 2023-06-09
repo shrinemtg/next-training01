@@ -19,7 +19,7 @@ export default function Header() {
       <h2>webデザイナー見習い</h2>
       <p>next.jsの基礎練習01</p>
       <Button>
-        <Link href="/page2">to potfolio</Link>
+        <Link href="/page2">to Potfolio</Link>
       </Button>
     </HeaderContainer>
   );
