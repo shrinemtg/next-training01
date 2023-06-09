@@ -114,9 +114,12 @@ const MainContainer = styled.div`
 
   h1 {
     text-decoration: underline;
-    text-decoration-color: #128080;
+    text-decoration-color: #25abcc;
     /* display: inline-block;
     margin-bottom: -1px; */
+  }
+  p {
+    font-size: 18px;
   }
 
   ul {
@@ -127,9 +130,9 @@ const MainContainer = styled.div`
 const ImageContainer = styled.div`
   > img {
     border-radius: 1%;
-    margin: 10 20;
+    margin: 10px auto;
     max-width: 100%;
-    margin-top: 30px;
+    margin-top: 32px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   }

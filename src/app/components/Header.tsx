@@ -16,7 +16,11 @@ export default function Header() {
         />
       </ImageContainer>
       <h1>Satou Mitsugu</h1>
-      <h2>webデザイナー見習い</h2>
+      <h2>
+        見習い
+        <br />
+        webデザイナー
+      </h2>
       {/* <p>next.jsの基礎練習01</p> */}
       <Button>
         <Link href="/page2">to Potfolio</Link>
@@ -26,38 +30,33 @@ export default function Header() {
 }
 
 const Button = styled.div`
+  margin-bottom: 32px;
   > a {
     color: #000;
     text-decoration: none;
+    font-size: 18px;
     position: relative;
     &::after {
       content: "";
       position: absolute;
       left: -6px;
       bottom: -2px;
-      width: 88px;
-      height: 1px;
-      background-color: #128080;
+      width: 100px;
+      height: 2px;
+      background-color: #25abcc;
       transition: background-color 3s ease-in-out;
-
-      /* &:hover {
-        &:after {
-          height: 100%;
-          background-color: #801212;
-        }
-        font-size: 1.2em;
-      } */
     }
   }
 `;
 
 const HeaderContainer = styled.div`
   text-align: center;
-  /* background-color: #000000;
-  color: 2b2b2b; */
   margin: auto;
   padding: 0;
   text-decoration: none;
+  h1 {
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 const ImageContainer = styled.div`
