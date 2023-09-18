@@ -11,7 +11,7 @@ export default function Portfolio() {
       <Title>
         <h1>My Portfolio</h1>
         <Button>
-          <Link href="/">to Home</Link>
+          <Link href="/">● to Home ●</Link>
         </Button>
       </Title>
       <PortfolioContainer>
@@ -82,6 +82,30 @@ export default function Portfolio() {
             width={width}
             height={height}
           />
+          <Image
+            src="/Images/portfolio/well-be-earth-rogo.png"
+            alt=""
+            width={width}
+            height={height}
+          />
+          <Image
+            src="/Images/portfolio/ラベルあさお.png"
+            alt=""
+            width={width}
+            height={height}
+          />
+          <Image
+            src="/Images/portfolio/ラベルこんこん.png"
+            alt=""
+            width={width}
+            height={height}
+          />
+          <Image
+            src="/Images/portfolio/日本酒モックアップ.jpg"
+            alt=""
+            width={width}
+            height={height}
+          />
         </ImageContainer>
       </PortfolioContainer>
       <FooterContainer>
@@ -113,18 +137,27 @@ const Title = styled.h1`
 
 const Button = styled.div`
   > a {
-    color: #000;
-    text-decoration: none;
     position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      left: -6px;
-      bottom: -2px;
-      width: 120px;
-      height: 2px;
-      background-color: #25abcc;
-      transition: background-color 3s ease-in-out;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    background: #00bcd4;
+    color: #00bcd4;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    border-bottom: solid 4px #118e9e;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.44),
+      1px 1px rgba(0, 0, 0, 0.38);
+    cursor: pointer; /* クリック可能なボタンにするためにカーソルを追加 */
+
+    &:hover {
+      /* 押したときのスタイル */
+      border-bottom: solid 2px #00bcd4;
+      box-shadow: none;
+      text-shadow: -2px -2px -2px rgba(255, 255, 255, 0.3),
+        1px 1px rgba(0, 0, 0, 0.3);
     }
   }
 `;
@@ -137,6 +170,7 @@ const ImageContainer = styled.div`
 `;
 
 const PortfolioContainer = styled.div`
+  object-fit: cover;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
