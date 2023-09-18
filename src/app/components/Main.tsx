@@ -17,15 +17,17 @@ export default function Main() {
         </ImageContainer>
         <div>
           <h2>フルスタックエンジニアを目指して日々精進！</h2>
-          <p>webデザイン・ロゴデザイン・コーディングできます</p>
-
-          <h2>人に寄り添い共に叶える</h2>
           <p>
-            十人十色のこの道を
+            webデザイン・ロゴデザイン・コーディング等ができます。
             <br />
-            少しだけ便利に
+            モチベーションを高く維持し分からないことは貪欲に学び知識、スキルを向上させていきます！
+          </p>
+
+          <h2>人に寄り添い共に叶えるをコンセプトに</h2>
+          <p>
+            十人十色の個性を尊重しながら
             <br />
-            一色では終わらせない
+            毎日が少しだけ便利に少しだけ笑顔になる
             <br />
             そんなデザインを共に作っていくことを心がけています。
           </p>
@@ -44,18 +46,20 @@ export default function Main() {
         </div>
         <div>
           <h2>デザインツール</h2>
-          <p>adobe cc</p>
+          <p>
+            adobe cc
+            <br />
+            Figma
+          </p>
           <h2>プログラミングツール</h2>
           <p>
             VScode
             <br />
-            Figma
-            <br />
             Git Hub
             <br />
+            WSL2 (ubuntu)
           </p>
           <h2>情報共有ツール</h2>
-
           <p>
             Slack
             <br />
@@ -95,6 +99,10 @@ export default function Main() {
             HTML・CSS
             <br />
             Java script
+            <br />
+            styled-components
+            <br />
+            Typescript
             <br />
             React
             <br />
