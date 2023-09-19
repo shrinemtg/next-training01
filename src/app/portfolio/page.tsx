@@ -14,6 +14,32 @@ export default function Portfolio() {
           <Link href="/">● to Home ●</Link>
         </Button>
       </Title>
+      <SiteList>
+        <h2>◆デモサイト</h2>
+        <ul>
+          <li>
+            <a href="https://dotinstall-demo.vercel.app/">
+              dotinstallで学んだことの復習用デモサイト
+            </a>
+          </li>
+          <li>
+            <a href="https://bicycle-blog-demo.vercel.app/">
+              HTLM/CSSを使った復習用デモサイト
+            </a>
+          </li>
+          <li>
+            <a href="https://next-train-blog-main.vercel.app/">
+              next.jsでのページ遷移、styled-componentsの練習サイト→デザインカンプをFigmaで作成
+            </a>
+          </li>
+          <li>
+            <a href="https://memory-game-train.vercel.app/">
+              next.jsでTypescriptの練習「神経衰弱」作成
+            </a>
+          </li>
+        </ul>
+      </SiteList>
+
       <PortfolioContainer>
         <ImageContainer>
           <VideoContainer controls>
@@ -114,6 +140,13 @@ export default function Portfolio() {
     </>
   );
 }
+
+//サイトリストのスタイリング
+const SiteList = styled.div`
+  h2 {
+    margin-top: 30px;
+  }
+`;
 
 const FooterContainer = styled.div`
   text-align: center;
